@@ -1,0 +1,41 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">hydrate</h3>
+</div>
+
+<div class="jumbotron">
+  <h1>Hydrate</h1>
+  <p class="lead">
+    How much water have you drunk today?
+  </p>
+  <p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary" ng-click="count = count + 100" ng-init="count=0">{{volume}}{{units.0}}</button>
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#" ng-click="volume=volume.2">{{volume.2}}{{units.0}}</a></li>
+        <li><a href="#">1000mL</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Goal:</h4>
+      <p>{{count}}mL / 2500mL</p>
+    </div>
+  </p>
+</div>
+
+<div class="row marketing">
+  <h3>You probably aren't drinking enough water</h3>
+  <p>The average adult should drink between 2 and 3 liters of water a day.</p>
+</div>
+
+<div class="footer">
+  <p>Built with ♥ and burritos</p>
+</div>
