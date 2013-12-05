@@ -1,7 +1,7 @@
 <div class="header">
   <ul class="nav nav-pills pull-right">
     <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="/about">About</a></li>
     <li><a ng-href="#">Contact</a></li>
   </ul>
   <h3 class="text-muted">hydrate</h3>
@@ -14,19 +14,12 @@
   </p>
   <p>
     <div class="btn-group">
-      <button type="button" class="btn btn-primary" ng-click="count = count + 100" ng-init="count=0">{{volume}}{{units.0}}</button>
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-        <span class="caret"></span>
-        <span class="sr-only">Toggle Dropdown</span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-        <li><a href="#" ng-click="volume=volume.2">{{volume.2}}{{units.0}}</a></li>
-        <li><a href="#">1000mL</a></li>
-      </ul>
+      <button type="button" class="btn btn-primary" ng-click="updateDayTotal()" ng-model="dayTotal">{{volume}}{{unit}}</button>
+      <input type="text" value="{{daily}}" ng-model="dailyTotal">
     </div>
     <div>
       <h4>Goal:</h4>
-      <p>{{count}}mL / 2500mL</p>
+      <p>{{dayTotal}}{{unit}} / {{dayGoal}}{{unit}}</p>
     </div>
   </p>
 </div>
