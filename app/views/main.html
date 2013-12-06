@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main" id="full">
   <h1 class="headline">Start tracking now</h1>
   <p class="lead">
     How much water have you drunk today?
@@ -21,3 +21,16 @@
 <div class="footer">
   <p>Built with ♥ and burritos</p>
 </div>
+
+<script type="text/javascript">
+    function resize()
+    {
+        var heights = window.innerHeight;
+        document.getElementById("full").style.height = heights + "px";
+        document.getElementById("full").style.paddingTop = heights/4 + "px";
+    }
+    resize();
+    window.onresize = function() {
+        resize();
+    };
+</script> 
