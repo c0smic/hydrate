@@ -16,26 +16,50 @@
       </a>
     </div>
   </div>
+  <div id="learn">
+    <a ng-click="scrollTo('landingLearnMore')">
+      <h5>Learn more</h5>
+      <div class="circle">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+      </a>
+    </div>
+  </div>
 </div>
 
-<div class="row marketing">
-  <h3>You probably aren't drinking enough water</h3>
-  <p>The average adult should drink between 2 and 3 liters of water a day.</p>
-</div>
-
-<div class="footer">
-  <p>Built with ♥ and burritos</p>
+<div class="container" id="landingLearnMore">
+  <div class="row marketing">
+    <header>
+      <h2 class="text-center">You probably aren't drinking enough water</h2>
+    </header>
+    <div class="col-md-4">
+      <span class="glyphicon glyphicon-tint"></span>
+      <p>Water intake for everyone is different, much of it depends on body weight, activity levels and even geographical location.  It's important to know how much water you should be drinking each day in order to keep your body well hydrated throughout the day.</p>
+    </div>
+    <div class="col-md-4">
+      <span class="glyphicon glyphicon-ok"></span>
+      <p>
+        Calculate how much water you need to be drinking each day and set your goal, Hydrate will help you reach it.  We'll even keep track of your intake levels throughout the week and show you how you've been doing.  
+      </p>
+    </div>
+    <div class="col-md-4">
+      <span class="glyphicon glyphicon-send"></span>
+      <p>
+        Lack of proper hydration is the leading cause for loss of energy and cognitive ability, and symptoms can inculde joint pain, headaches, and yes, thirst.  Be on top of your game everyday and feel the difference: make it your goal to stay hydrated.
+      </p>
+    </div>
+  </div>
 </div>
 
 <script type="text/javascript">
-    function resize()
-    {
-        var heights = window.innerHeight;
-        document.getElementById("full").style.height = heights + "px";
-        document.getElementById("full").style.paddingTop = heights/4 + "px";
-    }
-    resize();
-    window.onresize = function() {
-        resize();
-    };
+  function resize()
+  {
+      var heights = window.innerHeight - 50;
+      document.getElementById("full").style.height = heights + "px";
+      document.getElementById("full").style.paddingTop = heights/4 + "px";
+      document.getElementById("learn").style.top = heights - 30 + "px";
+  }
+  resize();
+  window.onresize = function() {
+      resize();
+  };
 </script> 
