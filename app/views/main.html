@@ -1,16 +1,21 @@
 <div class="main" id="full">
   <h1 class="headline">Start tracking now</h1>
   <p class="lead">
-    How much water have you drunk today?
+    How much water did you drink today?
   </p>
-  <p>
+  <div class="function">
     <div class="group">
       <button type="button" class="btn btn-primary volumeAdd" ng-click="updateDayTotal()" ng-model="dayTotal"><span class="glyhpicon glyphicon-plus"></span></button>
       <div class="dayTotal">
         <span>{{dayTotal}}{{unit}}</span>
       </div>
     </div>
-  </p>
+    <div class="settings">
+      <a href="#">
+        <span class="glyphicon glyphicon-cog"></span>
+      </a>
+    </div>
+  </div>
 </div>
 
 <div class="row marketing">
