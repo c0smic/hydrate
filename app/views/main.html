@@ -5,7 +5,7 @@
   </p>
   <div class="function">
     <div class="group">
-      <button type="button" class="btn btn-primary volumeAdd" ng-click="updateDayTotal()" ng-model="dayTotal"><span class="glyhpicon glyphicon-plus"></span></button>
+      <button type="button" class="btn btn-primary volumeAdd" ng-click="updateDayTotal(buttonCta)"><span class="glyhpicon glyphicon-plus"></span></button>
       <div class="dayTotal">
         <span>{{dayTotal}}{{unit}}</span>
       </div>
@@ -15,6 +15,9 @@
         <span class="glyphicon glyphicon-cog"></span>
       </a>
     </div>
+  </div>
+  <div class="landing-cta" ng-show="buttonCta">
+    <a href="#/track" class="landing-button">Start tracking your water <span class="glyphicon glyphicon-chevron-right"></span></a>
   </div>
   <div id="learn">
     <a ng-click="scrollTo('landingLearnMore')">
@@ -42,7 +45,7 @@
       </p>
     </div>
     <div class="col-md-4">
-      <span class="glyphicon glyphicon-send"></span>
+      <span class="glyphicon glyphicon-time"></span>
       <p>
         Lack of proper hydration is the leading cause for loss of energy and cognitive ability, and symptoms can inculde joint pain, headaches, and yes, thirst.  Be on top of your game everyday and feel the difference: make it your goal to stay hydrated.
       </p>

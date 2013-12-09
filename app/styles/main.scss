@@ -61,7 +61,11 @@ footer {
 }
 .headline {
     font-size: 5em;
-    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    text-shadow: 0 -1px #2980b9;
+    filter: dropshadow(color=#e6e6e6, offx=0, offy=0);
+    color: #fff;
 }
 
 .navbar {
@@ -75,7 +79,7 @@ footer {
 .group {
     display: inline-block;
     min-width: 245px;
-    margin-right: 10px;
+    margin-right: 20px;
     float: left;
     text-align: center;
 }
@@ -150,4 +154,35 @@ footer {
         line-height: 1.65em;
         margin: 0 20px 0 20px;
     }
+}
+.landing-button {
+    font-family: "Montserrat","Helvetica","Arial";
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    background: #F39012;
+    -webkit-box-shadow: #e94e16 0px -2px 0px 0 inset,rgba(0,0,0,0.2) 0px 3px 2px 0;
+    -moz-box-shadow: #e94e16 0px -2px 0px 0 inset,rgba(0,0,0,0.2) 0px 3px 2px 0;
+    box-shadow: #e94e16 0px -2px 0px 0 inset,rgba(0,0,0,0.2) 0px 3px 2px 0;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.25em;
+    &:hover {
+        background: #F89B0E;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+.landing-cta {
+    margin-top: 60px;
+    text-align: center;
+    transition: .8s;
+    max-height: 60px;
 }
