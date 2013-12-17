@@ -6,7 +6,8 @@
 #= require_tree ./controllers/main
 # require_tree ./services/main
 
-angular.module("hydrateApp", ["ngCookies", "ngResource", "ngSanitize", "ngRoute"]).config ($routeProvider) ->
+"use strict"
+angular.module("hydrateApp", ["ngCookies", "ngResource", "ngRoute"]).config ($routeProvider) ->
   $routeProvider.when("/",
     templateUrl: "../assets/main.html"
     controller: "MainCtrl"
