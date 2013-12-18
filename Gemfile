@@ -14,6 +14,7 @@ gem "rspec-rails", "~> 2.14.0"
 gem 'sass-rails', '~> 4.0.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 gem 'angularjs-rails'
 gem 'uglifier', '>= 1.3.0'
 

@@ -1,6 +1,7 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$icon-font-path: "bootstrap/fonts/";
 
 @import "bootstrap";
+@import "font-awesome";
 @import "modules/_media-queries.css.scss";
 
 .browsehappy {
@@ -106,7 +107,7 @@ footer {
 }
 .settings {
     font-size: 20px;
-    .glyphicon {
+    .fa {
         padding-top: 17px;
         color: #fff;
     }
@@ -145,8 +146,8 @@ footer {
 .marketing {
     text-align: center;
     margin-bottom: 40px;
-    .glyphicon {
-        font-size: 60px;
+    .fa {
+        font-size: 100px;
         margin-bottom: 20px;
     }
     p {
