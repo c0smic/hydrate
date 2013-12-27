@@ -7,6 +7,9 @@ gem 'puma'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+# Devise for authentication
+gem 'devise' 
+
 # Use sprockets
 gem 'sprockets', '~> 2.0'
 gem "rspec-rails", "~> 2.14.0"

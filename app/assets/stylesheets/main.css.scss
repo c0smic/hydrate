@@ -19,6 +19,31 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+  max-width: 900px;
+}
+
+/*
+
+  Forms
+
+ */
+form {
+  &.new_user {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  & #user_password_confirmation {
+  margin-bottom: 15px;
+  }
+}
+.devise_links {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
